@@ -1,0 +1,211 @@
+Ha presionado el boton:
+Estado: CUP
+Su cambio es: 10
+Estado: COFFEE
+Estado: MILK
+Estado: FINISH
+Estado: CUP
+Su cambio es: 49
+Estado: COFFEE
+Estado: MILK
+Estado: FINISH
+Fsm_time1 4011  Fsm_time2 1562 
+ Sobrante 999914000 
+Fsm_time1 2032  Fsm_time2 1302 
+ Sobrante 249881000 
+Fsm_time1 306611  Fsm_time2 18177 
+ Sobrante 249682000 
+Fsm_time1 1666  Fsm_time2 1615 
+ Sobrante 249388000 
+Fsm_time1 29896  Fsm_time2 1666 
+ Sobrante 249710000 
+Fsm_time1 1563  Fsm_time2 1718 
+ Sobrante 249678000 
+Fsm_time1 2605  Fsm_time2 1302 
+ Sobrante 249709000 
+Fsm_time1 1719  Fsm_time2 1510 
+ Sobrante 249702000 
+Fsm_time1 1770  Fsm_time2 1459 
+ Sobrante 249711000 
+Fsm_time1 1511  Fsm_time2 1354 
+ Sobrante 249710000 
+Fsm_time1 2344  Fsm_time2 1510 
+ Sobrante 249705000 
+Fsm_time1 1875  Fsm_time2 1614 
+ Sobrante 249705000 
+Fsm_time1 2291  Fsm_time2 2083 
+ Sobrante 249712000 
+Fsm_time1 1563  Fsm_time2 1354 
+ Sobrante 249701000 
+Fsm_time1 1927  Fsm_time2 1302 
+ Sobrante 249708000 
+Fsm_time1 1719  Fsm_time2 1354 
+ Sobrante 249705000 
+Fsm_time1 1666  Fsm_time2 1615 
+ Sobrante 249713000 
+Fsm_time1 40833  Fsm_time2 1614 
+ Sobrante 249712000 
+Fsm_time1 2500  Fsm_time2 1667 
+ Sobrante 249665000 
+Fsm_time1 1459  Fsm_time2 1406 
+ Sobrante 249695000 
+Fsm_time1 1771  Fsm_time2 1354 
+ Sobrante 249712000 
+Fsm_time1 1875  Fsm_time2 1354 
+ Sobrante 249710000 
+Fsm_time1 1562  Fsm_time2 1563 
+ Sobrante 249711000 
+Fsm_time1 1562  Fsm_time2 1354 
+ Sobrante 249705000 
+Fsm_time1 2291  Fsm_time2 1563 
+ Sobrante 249714000 
+Fsm_time1 1823  Fsm_time2 1563 
+ Sobrante 249699000 
+Fsm_time1 1928  Fsm_time2 1562 
+ Sobrante 249708000 
+Fsm_time1 1511  Fsm_time2 1406 
+ Sobrante 249706000 
+Fsm_time1 1666  Fsm_time2 1355 
+ Sobrante 249714000 
+Fsm_time1 1510  Fsm_time2 1511 
+ Sobrante 249712000 
+Fsm_time1 8958  Fsm_time2 1979 
+ Sobrante 249707000 
+Fsm_time1 1823  Fsm_time2 1302 
+ Sobrante 249666000 
+Fsm_time1 1511  Fsm_time2 1354 
+ Sobrante 249703000 
+Fsm_time1 41718  Fsm_time2 13125 
+ Sobrante 249682000 
+Fsm_time1 1771  Fsm_time2 1615 
+ Sobrante 249660000 
+Fsm_time1 31927  Fsm_time2 1719 
+ Sobrante 249703000 
+Fsm_time1 2291  Fsm_time2 1511 
+ Sobrante 249676000 
+Fsm_time1 2240  Fsm_time2 1354 
+ Sobrante 249696000 
+Fsm_time1 1823  Fsm_time2 1406 
+ Sobrante 249710000 
+Fsm_time1 1563  Fsm_time2 1562 
+ Sobrante 249705000 
+Fsm_time1 1771  Fsm_time2 1510 
+ Sobrante 249714000 
+Fsm_time1 1563  Fsm_time2 1354 
+ Sobrante 249716000 
+Fsm_time1 2136  Fsm_time2 1718 
+ Sobrante 249710000 
+Fsm_time1 1822  Fsm_time2 1407 
+ Sobrante 249700000 
+Fsm_time1 1666  Fsm_time2 1615 
+ Sobrante 249708000 
+Fsm_time1 1980  Fsm_time2 1354 
+ Sobrante 249710000 
+Fsm_time1 1719  Fsm_time2 1510 
+ Sobrante 249710000 
+Fsm_time1 1511  Fsm_time2 1406 
+ Sobrante 249705000 
+Fsm_time1 45364  Fsm_time2 2084 
+ Sobrante 249716000 
+Fsm_time1 1615  Fsm_time2 1354 
+ Sobrante 249652000 
+Fsm_time1 2083  Fsm_time2 1458 
+ Sobrante 249709000 
+Fsm_time1 1667  Fsm_time2 1406 
+ Sobrante 249705000 
+Fsm_time1 1511  Fsm_time2 1510 
+ Sobrante 249713000 
+Fsm_time1 1875  Fsm_time2 1406 
+ Sobrante 249716000 
+Fsm_time1 2188  Fsm_time2 1562 
+ Sobrante 249707000 
+Fsm_time1 1823  Fsm_time2 1406 
+ Sobrante 249699000 
+Fsm_time1 1510  Fsm_time2 1355 
+ Sobrante 249712000 
+Fsm_time1 1927  Fsm_time2 1407 
+ Sobrante 249716000 
+Fsm_time1 1875  Fsm_time2 1510 
+ Sobrante 249707000 
+Fsm_time1 1510  Fsm_time2 1354 
+ Sobrante 249705000 
+Fsm_time1 1823  Fsm_time2 1771 
+ Sobrante 249714000 
+Fsm_time1 8542  Fsm_time2 1510 
+ Sobrante 249707000 
+Fsm_time1 1927  Fsm_time2 1667 
+ Sobrante 249658000 
+Fsm_time1 1614  Fsm_time2 1563 
+ Sobrante 249683000 
+Fsm_time1 1719  Fsm_time2 1406 
+ Sobrante 249698000 
+Fsm_time1 2136  Fsm_time2 1406 
+ Sobrante 249702000 
+Fsm_time1 2396  Fsm_time2 1458 
+ Sobrante 249691000 
+Fsm_time1 1562  Fsm_time2 1406 
+ Sobrante 249672000 
+Fsm_time1 1823  Fsm_time2 1354 
+ Sobrante 249697000 
+Fsm_time1 1719  Fsm_time2 1354 
+ Sobrante 249700000 
+Fsm_time1 1979  Fsm_time2 1407 
+ Sobrante 249687000 
+Fsm_time1 1823  Fsm_time2 1354 
+ Sobrante 249686000 
+Fsm_time1 2552  Fsm_time2 1458 
+ Sobrante 249694000 
+Fsm_time1 1875  Fsm_time2 1459 
+ Sobrante 249675000 
+Fsm_time1 1719  Fsm_time2 1406 
+ Sobrante 249684000 
+Fsm_time1 1771  Fsm_time2 1406 
+ Sobrante 249682000 
+Fsm_time1 1614  Fsm_time2 1563 
+ Sobrante 249697000 
+Fsm_time1 1823  Fsm_time2 1406 
+ Sobrante 249701000 
+Fsm_time1 2135  Fsm_time2 1667 
+ Sobrante 249691000 
+Fsm_time1 1823  Fsm_time2 1354 
+ Sobrante 249672000 
+Fsm_time1 1823  Fsm_time2 1614 
+ Sobrante 249689000 
+Fsm_time1 1615  Fsm_time2 1406 
+ Sobrante 249700000 
+Fsm_time1 1927  Fsm_time2 1407 
+ Sobrante 249688000 
+Fsm_time1 1614  Fsm_time2 1563 
+ Sobrante 249688000 
+Fsm_time1 2292  Fsm_time2 1510 
+ Sobrante 249691000 
+Fsm_time1 1719  Fsm_time2 1354 
+ Sobrante 249675000 
+Fsm_time1 2187  Fsm_time2 1511 
+ Sobrante 249686000 
+Fsm_time1 1771  Fsm_time2 1406 
+ Sobrante 249686000 
+Fsm_time1 1875  Fsm_time2 1406 
+ Sobrante 249694000 
+Fsm_time1 1771  Fsm_time2 1354 
+ Sobrante 249700000 
+Fsm_time1 2344  Fsm_time2 1510 
+ Sobrante 249691000 
+Fsm_time1 1563  Fsm_time2 1406 
+ Sobrante 249674000 
+Fsm_time1 1875  Fsm_time2 1406 
+ Sobrante 249692000 
+Fsm_time1 2031  Fsm_time2 1511 
+ Sobrante 249701000 
+Fsm_time1 1979  Fsm_time2 1562 
+ Sobrante 249688000 
+Fsm_time1 1823  Fsm_time2 1354 
+ Sobrante 249691000 
+Fsm_time1 2344  Fsm_time2 1354 
+ Sobrante 249695000 
+Fsm_time1 1927  Fsm_time2 1302 
+ Sobrante 249677000 
+Fsm_time1 1979  Fsm_time2 1562 
+ Sobrante 249688000 
+Fsm_time1 1666  Fsm_time2 1354 
+ Sobrante 249687000 
