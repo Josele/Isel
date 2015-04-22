@@ -194,7 +194,7 @@ static void
 fsm_coin (EventHandler* eh)
 { 
 
-  static struct timeval period = { 10, 0 };
+  static struct timeval period = { 0, 100*1000 };
 
   fsm_fire (coin_fsm);
   timeval_add(&eh->next_activation, &eh->next_activation, &period);
@@ -217,9 +217,9 @@ main (void)
 coin_fsm=fsm_new (coinm);
 cofm_fsm=fsm_new (cofm) ;
 
-  struct timespec medio, inicio, fin, resultado;
-  struct timeval clk_period = { 0, 250* 1000 };
-  struct timeval next_activation;
+ // struct timespec medio, inicio, fin, resultado;
+ // struct timeval clk_period = { 0, 250* 1000 };
+  //struct timeval next_activation;
 
 
    wiringPiSetup();
