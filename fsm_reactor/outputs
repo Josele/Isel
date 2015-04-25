@@ -1,30 +1,145 @@
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 0 
 Introcuce moneda y pulse enter:
-¿Ha termindaode intruducir?1=no/1=yes:
+¿Ha termindaode intruducir?1=no/1=yes:ncofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 50 
 Introcuce moneda y pulse enter:
-¿Ha termindaode intruducir?1=no/1=yes:
-Ha presionado el boton:
+¿Ha termindaode intruducir?1=no/1=yes:nHa presionado el boton:
 Estado: CUP
+cofm_fsm
 Su cambio es: 50
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
 Estado: COFFEE
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
 Estado: MILK
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
 Estado: FINISH
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 0 
 Introcuce moneda y pulse enter:
-¿Ha termindaode intruducir?1=no/1=yes:
-Ha presionado el boton:
+¿Ha termindaode intruducir?1=no/1=yes:nHa presionado el boton:
+cofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 20 
 Introcuce moneda y pulse enter:
-¿Ha termindaode intruducir?1=no/1=yes:
+¿Ha termindaode intruducir?1=no/1=yes:ncofm_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 20 
 Introcuce moneda y pulse enter:
-¿Ha termindaode intruducir?1=no/1=yes:
-Ha presionado el boton:
+¿Ha termindaode intruducir?1=no/1=yes:nHa presionado el boton:
 Estado: CUP
+cofm_fsm
 Su cambio es: 70
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm
+coin_fsm

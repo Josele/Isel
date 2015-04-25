@@ -21,9 +21,7 @@
 #define COFFEE_PRICE  50
 #define COFFEE_TIME 3000
 #define MILK_TIME 3000
-#ifndef DEBUG
- #define DEBUG(X) X
-#endif
+
 static fsm_t* coin_fsm;
 static fsm_t* cofm_fsm;
 enum cofm_state {
@@ -104,7 +102,7 @@ static void cup (fsm_t* this)
   digitalWrite (GPIO_LED, LOW);
   digitalWrite (GPIO_CUP, HIGH);
   timer_start (CUP_TIME);
-DEBUG(printf("Estado: CUP\n"));
+printf("Estado: CUP\n");
 }
 static void coin_enough (fsm_t* this)
 {
@@ -112,7 +110,7 @@ static void coin_enough (fsm_t* this)
 int devolver;
   if(flag_coin==1) {
   devolver=quantity- COFFEE_PRICE;
-DEBUG(printf("Su cambio es: %d\n",devolver));
+printf("Su cambio es: %d\n",devolver);
   flag_coin=0;
   devolver=0;
   quantity=0;
@@ -124,7 +122,7 @@ static void coffee (fsm_t* this)
   digitalWrite (GPIO_CUP, LOW);
   digitalWrite (GPIO_COFFEE, HIGH);
   timer_start (COFFEE_TIME);
-DEBUG(printf("Estado: COFFEE\n"));
+printf("Estado: COFFEE\n");
 }
 
 static void milk (fsm_t* this)
@@ -132,14 +130,14 @@ static void milk (fsm_t* this)
   digitalWrite (GPIO_COFFEE, LOW);
   digitalWrite (GPIO_MILK, HIGH);
   timer_start (MILK_TIME);
-DEBUG(printf("Estado: MILK\n"));
+printf("Estado: MILK\n");
 }
 
 static void finish (fsm_t* this)
-{
+{ 
   digitalWrite (GPIO_MILK, LOW);
   digitalWrite (GPIO_LED, HIGH);
-DEBUG(printf("Estado: FINISH\n"));
+printf("Estado: FINISH\n");
 }
 
 // Explicit FSM description money
@@ -163,13 +161,13 @@ if(this->current_state==COFM_WAITING){
 
 printf("Introcuzca las monedas pulsando enter para enviar:\n");
 //while(salida){
-  printf("Su credito es de %d \n",quantity);
-  printf("Introcuce moneda y pulse enter:\n");
+printf("Su credito es de %d \n",quantity);
+printf("Introcuce moneda y pulse enter:\n");
 
 // Moneda suponemos que maximo una moneda por un periodo
   scanf("%d", &tempmon);
   quantity=quantity+tempmon;
-  printf("¿Ha termindaode intruducir?1=no/1=yes:\n");
+  printf("¿Ha termindaode intruducir?1=no/1=yes:n");
 //boton
   scanf("%d", &salida);
 
@@ -198,7 +196,9 @@ desactivador1=1;}
   static struct timeval period = { 0, 100*1000 };
 
   fsm_fire (coin_fsm);
-  timeval_add(&eh->next_activation, &eh->next_activation, &period);
+printf("coin_fsm\n");
+  
+timeval_add(&eh->next_activation, &eh->next_activation, &period);
 }
 
 static void
@@ -215,17 +215,17 @@ desactivador2=1;
 interfaz(cofm_fsm);  
  
  fsm_fire (cofm_fsm);  
- 
+printf("cofm_fsm\n"); 
+
   timeval_add (&eh->next_activation, &eh->next_activation, &period);
 }
 
 int
 main (void)
-{int e;
- // struct timespec medio, inicio, fin, resultado;
- // struct timeval clk_period = { 0, 250* 1000 };
-  //struct timeval next_activation;
-
+{int e=0;
+  int n=100;
+ int tiempos[n][3];
+  struct timespec medio, inicio, fin, resultado;
 
    wiringPiSetup();
  pinMode (GPIO_C1, INPUT);
@@ -253,11 +253,11 @@ main (void)
   event_handler_init (&tcoin, 2, (eh_func_t)   fsm_cofm);
   reactor_add_handler (&tcoin);
 
-  for(e;e<100;e++) {
+  for(e;e<n;e++) {
    
     reactor_handle_events ();
  
-    }
+    }e=0;
 
 
 
