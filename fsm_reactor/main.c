@@ -21,6 +21,9 @@
 #define COFFEE_PRICE  50
 #define COFFEE_TIME 3000
 #define MILK_TIME 3000
+#ifndef DEBUG
+ #define DEBUG(X) X
+#endif
 static fsm_t* coin_fsm;
 static fsm_t* cofm_fsm;
 enum cofm_state {
@@ -101,7 +104,7 @@ static void cup (fsm_t* this)
   digitalWrite (GPIO_LED, LOW);
   digitalWrite (GPIO_CUP, HIGH);
   timer_start (CUP_TIME);
-printf("Estado: CUP\n");
+DEBUG(printf("Estado: CUP\n"));
 }
 static void coin_enough (fsm_t* this)
 {
@@ -109,7 +112,7 @@ static void coin_enough (fsm_t* this)
 int devolver;
   if(flag_coin==1) {
   devolver=quantity- COFFEE_PRICE;
-printf("Su cambio es: %d\n",devolver);
+DEBUG(printf("Su cambio es: %d\n",devolver));
   flag_coin=0;
   devolver=0;
   quantity=0;
@@ -121,7 +124,7 @@ static void coffee (fsm_t* this)
   digitalWrite (GPIO_CUP, LOW);
   digitalWrite (GPIO_COFFEE, HIGH);
   timer_start (COFFEE_TIME);
-printf("Estado: COFFEE\n");
+DEBUG(printf("Estado: COFFEE\n"));
 }
 
 static void milk (fsm_t* this)
@@ -129,14 +132,14 @@ static void milk (fsm_t* this)
   digitalWrite (GPIO_COFFEE, LOW);
   digitalWrite (GPIO_MILK, HIGH);
   timer_start (MILK_TIME);
-printf("Estado: MILK\n");
+DEBUG(printf("Estado: MILK\n"));
 }
 
 static void finish (fsm_t* this)
 {
   digitalWrite (GPIO_MILK, LOW);
   digitalWrite (GPIO_LED, HIGH);
-printf("Estado: FINISH\n");
+DEBUG(printf("Estado: FINISH\n"));
 }
 
 // Explicit FSM description money
@@ -152,8 +155,8 @@ static fsm_trans_t cofm[] = {
   { COFM_MILK,    timer_finished, COFM_WAITING, finish },
   {-1, NULL, -1, NULL },
 };
-int interfaz(fsm_t* this){
-int salida=1;
+void interfaz(fsm_t* this){
+int salida=0;
 int tempmon;
 if(this->current_state==COFM_WAITING){
 
@@ -166,23 +169,16 @@ printf("Introcuzca las monedas pulsando enter para enviar:\n");
 // Moneda suponemos que maximo una moneda por un periodo
   scanf("%d", &tempmon);
   quantity=quantity+tempmon;
-  printf("¿Ha termindaode intruducir? 1=no/0=yes:\n");
+  printf("¿Ha termindaode intruducir?1=no/1=yes:\n");
 //boton
   scanf("%d", &salida);
-//}
-  //printf("Presione el boton 'c':\n");
-//char* l=0;
 
-//  scanf(" %c", &l);
-//printf("boton %c:\n",l);
-//  if(l == 99)
 if(salida==1){
 printf("Ha presionado el boton:\n");
   button_isr();
     }
 }
 salida=0;
-return 0;
 }
 
 
@@ -207,13 +203,16 @@ desactivador1=1;}
 
 static void
 fsm_cofm (EventHandler* eh)
-{
+{ static struct timeval period = { 0, 500*1000 };
+
   static int desactivador2 = 0;
 if(desactivador2==0){
-cofm_fsm=fsm_new (cofm) ;
+cofm_fsm=fsm_new (cofm);
+
 desactivador2=1;
 }
- static struct timeval period = { 0, 500*1000 };
+
+interfaz(cofm_fsm);  
  
  fsm_fire (cofm_fsm);  
  
@@ -254,10 +253,9 @@ main (void)
   event_handler_init (&tcoin, 2, (eh_func_t)   fsm_cofm);
   reactor_add_handler (&tcoin);
 
-  for(e;e<20;e++) {
+  for(e;e<100;e++) {
    
     reactor_handle_events ();
-interfaz(cofm_fsm);  
  
     }
 
