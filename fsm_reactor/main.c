@@ -21,7 +21,8 @@
 #define COFFEE_PRICE  50
 #define COFFEE_TIME 3000
 #define MILK_TIME 3000
-
+static fsm_t* coin_fsm;
+static fsm_t* cofm_fsm;
 enum cofm_state {
   COFM_WAITING,
   COFM_CUP,
@@ -183,16 +184,20 @@ printf("Ha presionado el boton:\n");
 salida=0;
 return 0;
 }
- fsm_t* coin_fsm;
-  fsm_t* cofm_fsm;
-
 
 
 
 
 static void
 fsm_coin (EventHandler* eh)
-{ 
+{
+ static int desactivador1 = 0;
+
+ if(desactivador1==0){
+
+coin_fsm=fsm_new (coinm);
+
+desactivador1=1;}  
 
   static struct timeval period = { 0, 100*1000 };
 
@@ -203,9 +208,13 @@ fsm_coin (EventHandler* eh)
 static void
 fsm_cofm (EventHandler* eh)
 {
-  
+  static int desactivador2 = 0;
+if(desactivador2==0){
+cofm_fsm=fsm_new (cofm) ;
+desactivador2=1;
+}
  static struct timeval period = { 0, 500*1000 };
- interfaz(cofm_fsm);
+ 
  fsm_fire (cofm_fsm);  
  
   timeval_add (&eh->next_activation, &eh->next_activation, &period);
@@ -214,9 +223,6 @@ fsm_cofm (EventHandler* eh)
 int
 main (void)
 {int e;
-coin_fsm=fsm_new (coinm);
-cofm_fsm=fsm_new (cofm) ;
-
  // struct timespec medio, inicio, fin, resultado;
  // struct timeval clk_period = { 0, 250* 1000 };
   //struct timeval next_activation;
@@ -249,9 +255,11 @@ cofm_fsm=fsm_new (cofm) ;
   reactor_add_handler (&tcoin);
 
   for(e;e<20;e++) {
-  
+   
     reactor_handle_events ();
-     }
+interfaz(cofm_fsm);  
+ 
+    }
 
 
 
