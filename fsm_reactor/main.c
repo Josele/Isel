@@ -22,8 +22,8 @@
 #define COFFEE_TIME 3000
 #define MILK_TIME 3000
 
-static fsm_t* coin_fsm;
-static fsm_t* cofm_fsm;
+ struct timeval diff, diff2, ant, ant2;
+
 enum cofm_state {
   COFM_WAITING,
   COFM_CUP,
@@ -167,7 +167,7 @@ printf("Introcuce moneda y pulse enter:\n");
 // Moneda suponemos que maximo una moneda por un periodo
   scanf("%d", &tempmon);
   quantity=quantity+tempmon;
-  printf("¿Ha termindaode intruducir?1=no/1=yes:n");
+  printf("¿Ha termindaode intruducir?1=no/1=ye:\n");
 //boton
   scanf("%d", &salida);
 
@@ -186,47 +186,67 @@ static void
 fsm_coin (EventHandler* eh)
 {
  static int desactivador1 = 0;
+static fsm_t* coin_fsm;
+
+ static struct timeval resultado;
+static struct timeval period = { 0,100*1000 };
+
 
  if(desactivador1==0){
 
 coin_fsm=fsm_new (coinm);
 
 desactivador1=1;}  
-
-  static struct timeval period = { 0, 100*1000 };
+gettimeofday (&ant, NULL);
+timeval_sub (&ant, &ant, &diff);
+printf("cofm_fsm:Periodo %d  \n",(int)ant.tv_usec); 
+ant=diff;
+  
 
   fsm_fire (coin_fsm);
-printf("coin_fsm\n");
-  
-timeval_add(&eh->next_activation, &eh->next_activation, &period);
+gettimeofday (&diff, NULL);
+  timeval_sub (&resultado, &diff, &eh->next_activation);
+
+  timeval_add (&eh->next_activation, &eh->next_activation, &period);
+printf("coin_fsm:time %d \n",(int)resultado.tv_usec); 
 }
 
 static void
 fsm_cofm (EventHandler* eh)
 { static struct timeval period = { 0, 500*1000 };
 
+static fsm_t* cofm_fsm;
+
+  static struct timeval resultado;
   static int desactivador2 = 0;
 if(desactivador2==0){
 cofm_fsm=fsm_new (cofm);
 
 desactivador2=1;
 }
-
+gettimeofday (&ant2, NULL);
+timeval_sub (&ant2, &ant2, &diff2);
+printf("cofm_fsm:Periodo %d  \n",(int)ant2.tv_usec); 
+ant2=diff2;
 interfaz(cofm_fsm);  
- 
- fsm_fire (cofm_fsm);  
-printf("cofm_fsm\n"); 
+ fsm_fire (cofm_fsm); 
+gettimeofday (&diff2, NULL);
+  timeval_sub (&resultado, &diff2, &eh->next_activation);
+
+ printf("cofm_fsm:time %d  \n",(int)resultado.tv_usec);  
+
+
 
   timeval_add (&eh->next_activation, &eh->next_activation, &period);
+
 }
 
 int
 main (void)
-{int e=0;
-  int n=100;
- int tiempos[n][3];
-  struct timespec medio, inicio, fin, resultado;
-
+{volatile int e=0;
+int n=100;
+int tiempos[n];
+struct timespec  inicio, fin ,resultado;
    wiringPiSetup();
  pinMode (GPIO_C1, INPUT);
  pinMode (GPIO_C2, INPUT);
@@ -254,11 +274,17 @@ main (void)
   reactor_add_handler (&tcoin);
 
   for(e;e<n;e++) {
-   
+   clock_gettime (CLOCK_MONOTONIC,&inicio);     
     reactor_handle_events ();
- 
-    }e=0;
+   clock_gettime (CLOCK_MONOTONIC,&fin);
+  
+timespec_sub (&resultado,&fin , &inicio);
+ tiempos[e]=resultado.tv_nsec;
+  }e=0;
+  for ( e;e<n;e++) {
+ printf("Reactor time %d \n",tiempos[e]);
 
+}
 
-
+return 0;
 }

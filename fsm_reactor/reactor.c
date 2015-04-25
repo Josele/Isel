@@ -8,6 +8,22 @@ timeval_less (const struct timeval* a, const struct timeval* b)
     (a->tv_sec < b->tv_sec);
 }
 
+
+
+
+
+// Utility functions, should be elsewhere
+void timespec_sub (struct timespec *res, struct timespec *a, struct timespec *b) {
+  res->tv_sec = a->tv_sec - b->tv_sec;
+  res->tv_nsec = a->tv_nsec - b->tv_nsec;
+  if (res->tv_nsec < 0) {
+    --res->tv_sec;
+    res->tv_nsec += 1000000000;
+  }
+}
+// res = a - b
+
+
 void
 timeval_add (struct timeval* res,
              const struct timeval* a, const struct timeval* b)
