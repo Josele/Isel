@@ -279,10 +279,10 @@ return 0;
 }
 
 int main (int argc,char *argv[])
-{ int n=100;
+{ int n=200;
  int tiempos[n][3];
   struct timespec medio, inicio, fin, resultado;
-  struct timeval clk_period = { 0, 250* 1000 };
+  struct timeval clk_period = { 0, 100*1000 };
   struct timeval next_activation;
   int phase = 0;
   fsm_t* cofm_fsm = fsm_new (cofm);
@@ -336,8 +336,17 @@ break;
     phase = (phase + 1) % 1;
   }e=0;
   for ( e;e<n;e++) {
- printf("Fsm_time1 %d  Fsm_time2 %d \n Sobrante %d \n",tiempos[e][1],tiempos[e][2],tiempos[e][0]*1000);
-
+ printf("Cofm_time1 %d  Coin_time2 %d \n Sobrante %d \n",tiempos[e][1],tiempos[e][2],tiempos[e][0]*1000);
+if(tiempos[e][1]>tiempos[1][1]){
+tiempos[1][1]=tiempos[e][1];
 }
+if(tiempos[e][2]>tiempos[1][2]){
+tiempos[1][2]=tiempos[e][2];
+}
+
+} printf("Cofm_C %d Coin_C %d\n",tiempos[1][1],tiempos[1][2]);
+
+
+return 0;
 }
 
