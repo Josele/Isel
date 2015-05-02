@@ -20,7 +20,8 @@
 #define COFFEE_PRICE  50
 #define COFFEE_TIME 3000
 #define MILK_TIME 3000
-
+int desactivador2 = 0;
+int desactivador1 = 0;
  struct timeval diff, diff2, ant, ant2;
 
 enum cofm_state {
@@ -32,7 +33,8 @@ enum cofm_state {
 enum coinm_state {
   COINM_WAITING,
 };
-
+static  pthread_mutex_t mcoin;
+static  pthread_mutex_t mbutton;
 static int button = 0;
 static int flag_coin = 0;
 static int quantity = 0;
@@ -47,7 +49,7 @@ coin[1][0][0]=100;
 coin[1][0][1]=200;
 coin[1][1][0]=0;
 coin[1][1][1]=0;
-quantity=+coin[digitalRead (GPIO_C1)][digitalRead (GPIO_C2)][digitalRead (GPIO_C3)];
+//quantity=+coin[digitalRead (GPIO_C1)][digitalRead (GPIO_C2)][digitalRead (GPIO_C3)];
 
 
 
@@ -74,18 +76,18 @@ static void timer_start (int ms)
 
 static int coin_introduced (fsm_t* this)
 {
-
 return flag_coin;
 }
 static int button_pressed (fsm_t* this)
 {
-  
+ pthread_mutex_lock(&mbutton);  
 
   if((quantity>=COFFEE_PRICE)&&(button==1)){
    flag_coin=1;
 
   }
   button = 0;
+pthread_mutex_unlock(&mbutton);
   return flag_coin;
 }
 
@@ -105,14 +107,17 @@ printf("Estado: CUP\n");
 }
 static void coin_enough (fsm_t* this)
 {
-
+pthread_mutex_lock(&mcoin);
 int devolver;
+printf("coin_enough\n");
+
   if(flag_coin==1) {
-  devolver=quantity- COFFEE_PRICE;
+  devolver=quantity-COFFEE_PRICE;
 printf("Su cambio es: %d\n",devolver);
   flag_coin=0;
   devolver=0;
   quantity=0;
+pthread_mutex_unlock(&mcoin);
     }
 }
 
@@ -165,14 +170,18 @@ printf("Introcuce moneda y pulse enter:\n");
 
 // Moneda suponemos que maximo una moneda por un periodo
   scanf("%d", &tempmon);
+ pthread_mutex_lock(&mcoin);
   quantity=quantity+tempmon;
-  printf("¿Ha termindaode intruducir?1=no/1=ye:\n");
-//boton
+ pthread_mutex_unlock(&mcoin);
+ printf("¿Ha termindaode intruducir 0=n 1=yes :\n");
+
   scanf("%d", &salida);
 
 if(salida==1){
 printf("Ha presionado el boton:\n");
+ pthread_mutex_lock(&mbutton);
   button_isr();
+ pthread_mutex_unlock(&mbutton);
     }
 }
 salida=0;
@@ -190,19 +199,20 @@ static fsm_t* coin_fsm;
 
 coin_fsm=fsm_new (coinm);
 
- 
+  
+while(1){ 
 gettimeofday (&ant, NULL);
 timeval_sub (&ant, &ant, &diff);
-printf("cofm_fsm:Periodo %d  \n",(int)ant.tv_usec); 
+//printf("cofm_fsm:Periodo %d  \n",(int)ant.tv_usec); 
 ant=diff;
   
 
   fsm_fire (coin_fsm);
 gettimeofday (&diff, NULL);
+}
 
 
-
-printf("coin_fsm:time %d \n",(int)resultado.tv_usec); 
+//printf("coin_fsm:time %d \n",(int)resultado.tv_usec); 
 }
 
 
@@ -212,25 +222,27 @@ printf("coin_fsm:time %d \n",(int)resultado.tv_usec);
 
 static void
 fsm_cofm (void)
-{ 
+{
 
 static fsm_t* cofm_fsm;
 
   static struct timeval resultado;
  
+
+
 cofm_fsm=fsm_new (cofm);
 
 while(1){
 gettimeofday (&ant2, NULL);
 timeval_sub (&ant2, &ant2, &diff2);
-printf("cofm_fsm:Periodo %d  \n",(int)ant2.tv_usec); 
+//printf("cofm_fsm:Periodo %d  \n",(int)ant2.tv_usec); 
 ant2=diff2;
 interfaz(cofm_fsm);  
  fsm_fire (cofm_fsm); 
 gettimeofday (&diff2, NULL);
 
 
- printf("cofm_fsm:time %d  \n",(int)resultado.tv_usec);  
+ //printf("cofm_fsm:time %d  \n",(int)resultado.tv_usec);  
 
 
 
@@ -249,9 +261,9 @@ struct timespec  inicio, fin ,resultado;
  pinMode (GPIO_C2, INPUT);
  pinMode (GPIO_C3, INPUT);
   pinMode (GPIO_BUTTON, INPUT);
-  wiringPiISR (GPIO_BUTTON, INT_EDGE_FALLING, button_isr);
+//  wiringPiISR (GPIO_BUTTON, INT_EDGE_FALLING, button_isr);
   pinMode (GPIO_COIN, INPUT);
-  wiringPiISR (GPIO_BUTTON, INT_EDGE_FALLING, moneda_isr);
+//  wiringPiISR (GPIO_BUTTON, INT_EDGE_FALLING, moneda_isr);
   pinMode (GPIO_CUP, OUTPUT);
   pinMode (GPIO_COFFEE, OUTPUT);
   pinMode (GPIO_MILK, OUTPUT);
@@ -261,15 +273,16 @@ struct timespec  inicio, fin ,resultado;
 
 wiringPiSetup () ;
 pinMode (0, OUTPUT);
+init_mutex (&mbutton, 2);
+init_mutex (&mcoin, 2);
  pthread_t t_coin, t_cofm;
   void* ret;
 
 
 
-  create_task (&t_cofm, fsm_cofm, NULL, 500, 2, 1024);
-  create_task (&t_coin, fsm_coin, NULL, 500, 2, 1024);
-pthread_join(t_cofm, &ret);
-
-  pthread_join(t_coin, &ret);
+  create_task (&t_cofm, fsm_cofm, NULL, 500, 1, 1024);
+  create_task (&t_coin, fsm_coin, NULL, 250, 2, 1024);
+	pthread_join(t_cofm, &ret);
+  	pthread_join(t_coin, &ret);
   return 0;
 }

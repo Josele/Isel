@@ -1,370 +1,370 @@
-cofm_fsm:Periodo 84542  
+cofm_fsm:Periodo 214086  
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 0 
 Introcuce moneda y pulse enter:
 ¿Ha termindaode intruducir?1=no/1=ye:
-cofm_fsm:time 175  
-cofm_fsm:Periodo 84716  
-coin_fsm:time 210 
-cofm_fsm:Periodo 99919  
+cofm_fsm:time 1474  
+cofm_fsm:Periodo 215546  
+coin_fsm:time 1496 
+cofm_fsm:Periodo 98630  
+coin_fsm:time 134 
+cofm_fsm:Periodo 99998  
 coin_fsm:time 138 
-cofm_fsm:Periodo 99987  
-coin_fsm:time 130 
-cofm_fsm:Periodo 99994  
-coin_fsm:time 130 
-cofm_fsm:Periodo 100006  
+cofm_fsm:Periodo 99998  
 coin_fsm:time 141 
-cofm_fsm:Periodo 499993  
+cofm_fsm:Periodo 99994  
+coin_fsm:time 140 
+cofm_fsm:Periodo 498640  
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 50 
 Introcuce moneda y pulse enter:
 ¿Ha termindaode intruducir?1=no/1=ye:
 Ha presionado el boton:
 Estado: CUP
-cofm_fsm:time 957  
-cofm_fsm:Periodo 100829  
+cofm_fsm:time 534  
+cofm_fsm:Periodo 100407  
 Su cambio es: 50
-coin_fsm:time 975 
-cofm_fsm:Periodo 99151  
-coin_fsm:time 132 
-cofm_fsm:Periodo 100013  
-coin_fsm:time 149 
-cofm_fsm:Periodo 99977  
-coin_fsm:time 134 
-cofm_fsm:Periodo 99991  
-coin_fsm:time 131 
-cofm_fsm:Periodo 499159  
+coin_fsm:time 552 
+cofm_fsm:Periodo 99572  
+coin_fsm:time 130 
+cofm_fsm:Periodo 99993  
+coin_fsm:time 128 
+cofm_fsm:Periodo 100000  
+coin_fsm:time 135 
+cofm_fsm:Periodo 99987  
+coin_fsm:time 127 
+cofm_fsm:Periodo 499581  
 Estado: COFFEE
-cofm_fsm:time 147  
-cofm_fsm:Periodo 100026  
-coin_fsm:time 159 
-cofm_fsm:Periodo 99965  
-coin_fsm:time 130 
-cofm_fsm:Periodo 99994  
-coin_fsm:time 129 
-cofm_fsm:Periodo 99999  
-coin_fsm:time 132 
-cofm_fsm:Periodo 99998  
-coin_fsm:time 134 
-cofm_fsm:Periodo 499969  
-cofm_fsm:time 135  
-cofm_fsm:Periodo 100009  
-coin_fsm:time 146 
-cofm_fsm:Periodo 99978  
-coin_fsm:time 128 
-cofm_fsm:Periodo 100009  
-coin_fsm:time 141 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 141 
-cofm_fsm:Periodo 99981  
+cofm_fsm:time 148  
+cofm_fsm:Periodo 100031  
+coin_fsm:time 160 
+cofm_fsm:Periodo 99962  
 coin_fsm:time 127 
-cofm_fsm:Periodo 499981  
-cofm_fsm:time 121  
-cofm_fsm:Periodo 100002  
-coin_fsm:time 132 
-cofm_fsm:Periodo 99989  
-coin_fsm:time 125 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 126 
-cofm_fsm:Periodo 99999  
-coin_fsm:time 130 
-cofm_fsm:Periodo 100004  
-coin_fsm:time 139 
-cofm_fsm:Periodo 500011  
-cofm_fsm:time 136  
-cofm_fsm:Periodo 100006  
-coin_fsm:time 147 
-cofm_fsm:Periodo 99974  
-coin_fsm:time 125 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 125 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 125 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 125 
-cofm_fsm:Periodo 499979  
-cofm_fsm:time 120  
 cofm_fsm:Periodo 100003  
-coin_fsm:time 131 
-cofm_fsm:Periodo 99991  
-coin_fsm:time 126 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 126 
-cofm_fsm:Periodo 99998  
-coin_fsm:time 128 
-cofm_fsm:Periodo 100002  
 coin_fsm:time 134 
-cofm_fsm:Periodo 500011  
-cofm_fsm:time 136  
-cofm_fsm:Periodo 100011  
-coin_fsm:time 147 
-cofm_fsm:Periodo 99976  
-coin_fsm:time 129 
-cofm_fsm:Periodo 99993  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99994  
-coin_fsm:time 125 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 126 
-cofm_fsm:Periodo 499980  
-cofm_fsm:time 121  
-cofm_fsm:Periodo 100003  
-coin_fsm:time 132 
-cofm_fsm:Periodo 99994  
-coin_fsm:time 132 
-cofm_fsm:Periodo 99991  
-coin_fsm:time 128 
-cofm_fsm:Periodo 100009  
-coin_fsm:time 142 
-cofm_fsm:Periodo 99993  
+cofm_fsm:Periodo 100000  
 coin_fsm:time 139 
-cofm_fsm:Periodo 500019  
-Estado: MILK
-cofm_fsm:time 172  
-cofm_fsm:Periodo 100043  
-coin_fsm:time 184 
-cofm_fsm:Periodo 99939  
-coin_fsm:time 129 
-cofm_fsm:Periodo 100015  
-coin_fsm:time 174 
-cofm_fsm:Periodo 99948  
-coin_fsm:time 126 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 127 
-cofm_fsm:Periodo 499943  
-cofm_fsm:time 120  
-cofm_fsm:Periodo 100001  
-coin_fsm:time 131 
-cofm_fsm:Periodo 99992  
-coin_fsm:time 128 
-cofm_fsm:Periodo 100001  
-coin_fsm:time 138 
+cofm_fsm:Periodo 99983  
+coin_fsm:time 140 
+cofm_fsm:Periodo 499966  
+cofm_fsm:time 118  
 cofm_fsm:Periodo 99988  
 coin_fsm:time 131 
-cofm_fsm:Periodo 100004  
-coin_fsm:time 140 
-cofm_fsm:Periodo 500028  
-cofm_fsm:time 154  
-cofm_fsm:Periodo 100023  
-coin_fsm:time 165 
-cofm_fsm:Periodo 99959  
-coin_fsm:time 129 
-cofm_fsm:Periodo 99994  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99995  
-coin_fsm:time 127 
-cofm_fsm:Periodo 499961  
-cofm_fsm:time 120  
-cofm_fsm:Periodo 100002  
-coin_fsm:time 131 
-cofm_fsm:Periodo 99992  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99995  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99995  
-coin_fsm:time 126 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 126 
-cofm_fsm:Periodo 500011  
-cofm_fsm:time 135  
-cofm_fsm:Periodo 100018  
-coin_fsm:time 146 
-cofm_fsm:Periodo 99977  
+cofm_fsm:Periodo 99991  
 coin_fsm:time 128 
-cofm_fsm:Periodo 99994  
-coin_fsm:time 126 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 126 
-cofm_fsm:Periodo 99996  
-coin_fsm:time 126 
-cofm_fsm:Periodo 499984  
-cofm_fsm:time 124  
-cofm_fsm:Periodo 100007  
-coin_fsm:time 135 
-cofm_fsm:Periodo 99990  
-coin_fsm:time 130 
-cofm_fsm:Periodo 99992  
-coin_fsm:time 127 
-cofm_fsm:Periodo 100007  
-coin_fsm:time 139 
-cofm_fsm:Periodo 99984  
-coin_fsm:time 127 
-cofm_fsm:Periodo 500005  
-cofm_fsm:time 134  
-cofm_fsm:Periodo 100016  
-coin_fsm:time 146 
-cofm_fsm:Periodo 99977  
-coin_fsm:time 129 
 cofm_fsm:Periodo 99993  
 coin_fsm:time 126 
 cofm_fsm:Periodo 99995  
 coin_fsm:time 125 
 cofm_fsm:Periodo 99997  
 coin_fsm:time 126 
-cofm_fsm:Periodo 499982  
-Estado: FINISH
-cofm_fsm:time 124  
-cofm_fsm:Periodo 100007  
-coin_fsm:time 135 
-cofm_fsm:Periodo 99987  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99995  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99996  
+cofm_fsm:Periodo 499997  
+cofm_fsm:time 119  
+cofm_fsm:Periodo 100003  
+coin_fsm:time 131 
+cofm_fsm:Periodo 99992  
 coin_fsm:time 127 
 cofm_fsm:Periodo 100003  
+coin_fsm:time 135 
+cofm_fsm:Periodo 100000  
+coin_fsm:time 139 
+cofm_fsm:Periodo 99982  
+coin_fsm:time 140 
+cofm_fsm:Periodo 499995  
+cofm_fsm:time 118  
+cofm_fsm:Periodo 99988  
+coin_fsm:time 130 
+cofm_fsm:Periodo 100005  
+coin_fsm:time 140 
+cofm_fsm:Periodo 99982  
+coin_fsm:time 126 
+cofm_fsm:Periodo 99995  
+coin_fsm:time 125 
+cofm_fsm:Periodo 100005  
+coin_fsm:time 138 
+cofm_fsm:Periodo 500001  
+cofm_fsm:time 126  
+cofm_fsm:Periodo 99998  
+coin_fsm:time 139 
+cofm_fsm:Periodo 99985  
+coin_fsm:time 129 
+cofm_fsm:Periodo 100003  
+coin_fsm:time 136 
+cofm_fsm:Periodo 99999  
+coin_fsm:time 139 
+cofm_fsm:Periodo 99982  
+coin_fsm:time 140 
+cofm_fsm:Periodo 499989  
+cofm_fsm:time 119  
+cofm_fsm:Periodo 99989  
+coin_fsm:time 131 
+cofm_fsm:Periodo 100005  
+coin_fsm:time 142 
+cofm_fsm:Periodo 99979  
+coin_fsm:time 126 
+cofm_fsm:Periodo 99996  
+coin_fsm:time 126 
+cofm_fsm:Periodo 99995  
+coin_fsm:time 125 
+cofm_fsm:Periodo 499997  
+cofm_fsm:time 120  
+cofm_fsm:Periodo 100005  
+coin_fsm:time 132 
+cofm_fsm:Periodo 99993  
+coin_fsm:time 131 
+cofm_fsm:Periodo 100002  
+coin_fsm:time 137 
+cofm_fsm:Periodo 99998  
+coin_fsm:time 139 
+cofm_fsm:Periodo 99981  
+coin_fsm:time 124 
+cofm_fsm:Periodo 499994  
+Estado: MILK
+cofm_fsm:time 210  
+cofm_fsm:Periodo 100097  
+coin_fsm:time 224 
+cofm_fsm:Periodo 99899  
+coin_fsm:time 128 
+cofm_fsm:Periodo 99993  
+coin_fsm:time 125 
+cofm_fsm:Periodo 99997  
+coin_fsm:time 126 
+cofm_fsm:Periodo 99995  
+coin_fsm:time 125 
+cofm_fsm:Periodo 499905  
+cofm_fsm:time 120  
+cofm_fsm:Periodo 100004  
+coin_fsm:time 132 
+cofm_fsm:Periodo 100000  
+coin_fsm:time 137 
+cofm_fsm:Periodo 100007  
+coin_fsm:time 149 
+cofm_fsm:Periodo 99994  
+coin_fsm:time 147 
+cofm_fsm:Periodo 99974  
+coin_fsm:time 125 
+cofm_fsm:Periodo 499996  
+cofm_fsm:time 120  
+cofm_fsm:Periodo 100005  
+coin_fsm:time 132 
+cofm_fsm:Periodo 99991  
+coin_fsm:time 128 
+cofm_fsm:Periodo 99993  
+coin_fsm:time 125 
+cofm_fsm:Periodo 99997  
+coin_fsm:time 126 
+cofm_fsm:Periodo 99995  
+coin_fsm:time 126 
+cofm_fsm:Periodo 499995  
+cofm_fsm:time 120  
+cofm_fsm:Periodo 100003  
+coin_fsm:time 132 
+cofm_fsm:Periodo 99991  
+coin_fsm:time 127 
+cofm_fsm:Periodo 100007  
+coin_fsm:time 138 
+cofm_fsm:Periodo 99997  
+coin_fsm:time 139 
+cofm_fsm:Periodo 99982  
+coin_fsm:time 125 
+cofm_fsm:Periodo 499995  
+cofm_fsm:time 119  
+cofm_fsm:Periodo 100004  
+coin_fsm:time 131 
+cofm_fsm:Periodo 99991  
+coin_fsm:time 127 
+cofm_fsm:Periodo 99994  
+coin_fsm:time 125 
+cofm_fsm:Periodo 99996  
+coin_fsm:time 125 
+cofm_fsm:Periodo 99996  
+coin_fsm:time 125 
+cofm_fsm:Periodo 499998  
+cofm_fsm:time 122  
+cofm_fsm:Periodo 100007  
 coin_fsm:time 134 
-cofm_fsm:Periodo 500007  
+cofm_fsm:Periodo 99989  
+coin_fsm:time 128 
+cofm_fsm:Periodo 100006  
+coin_fsm:time 138 
+cofm_fsm:Periodo 99997  
+coin_fsm:time 140 
+cofm_fsm:Periodo 99982  
+coin_fsm:time 126 
+cofm_fsm:Periodo 499992  
+cofm_fsm:time 119  
+cofm_fsm:Periodo 100002  
+coin_fsm:time 131 
+cofm_fsm:Periodo 99992  
+coin_fsm:time 131 
+cofm_fsm:Periodo 99991  
+coin_fsm:time 126 
+cofm_fsm:Periodo 99995  
+coin_fsm:time 125 
+cofm_fsm:Periodo 99996  
+coin_fsm:time 126 
+cofm_fsm:Periodo 500004  
+Estado: FINISH
+cofm_fsm:time 135  
+cofm_fsm:Periodo 100019  
+coin_fsm:time 148 
+cofm_fsm:Periodo 99978  
+coin_fsm:time 131 
+cofm_fsm:Periodo 100004  
+coin_fsm:time 139 
+cofm_fsm:Periodo 99997  
+coin_fsm:time 141 
+cofm_fsm:Periodo 99981  
+coin_fsm:time 126 
+cofm_fsm:Periodo 499979  
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 0 
 Introcuce moneda y pulse enter:
 ¿Ha termindaode intruducir?1=no/1=ye:
 Ha presionado el boton:
-cofm_fsm:time 161  
-cofm_fsm:Periodo 100036  
-coin_fsm:time 172 
-cofm_fsm:Periodo 99950  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99995  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99995  
+cofm_fsm:time 159  
+cofm_fsm:Periodo 100097  
+coin_fsm:time 226 
+cofm_fsm:Periodo 99897  
+coin_fsm:time 129 
+cofm_fsm:Periodo 99993  
 coin_fsm:time 126 
-cofm_fsm:Periodo 99995  
+cofm_fsm:Periodo 99996  
 coin_fsm:time 126 
-cofm_fsm:Periodo 499954  
+cofm_fsm:Periodo 99996  
+coin_fsm:time 126 
+cofm_fsm:Periodo 499958  
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 20 
 Introcuce moneda y pulse enter:
 ¿Ha termindaode intruducir?1=no/1=ye:
-cofm_fsm:time 134  
-cofm_fsm:Periodo 100016  
-coin_fsm:time 145 
-cofm_fsm:Periodo 99978  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99995  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99995  
-coin_fsm:time 126 
-cofm_fsm:Periodo 100005  
-coin_fsm:time 135 
-cofm_fsm:Periodo 499992  
+cofm_fsm:time 133  
+cofm_fsm:Periodo 100017  
+coin_fsm:time 146 
+cofm_fsm:Periodo 99980  
+coin_fsm:time 131 
+cofm_fsm:Periodo 100004  
+coin_fsm:time 139 
+cofm_fsm:Periodo 99997  
+coin_fsm:time 140 
+cofm_fsm:Periodo 99981  
+coin_fsm:time 125 
+cofm_fsm:Periodo 499982  
 Introcuzca las monedas pulsando enter para enviar:
 Su credito es de 20 
 Introcuce moneda y pulse enter:
 ¿Ha termindaode intruducir?1=no/1=ye:
 Ha presionado el boton:
 Estado: CUP
-cofm_fsm:time 173  
-cofm_fsm:Periodo 100048  
+cofm_fsm:time 231  
+cofm_fsm:Periodo 100117  
 Su cambio es: 70
-coin_fsm:time 188 
-cofm_fsm:Periodo 99934  
-coin_fsm:time 127 
-cofm_fsm:Periodo 99995  
+coin_fsm:time 246 
+cofm_fsm:Periodo 99876  
 coin_fsm:time 126 
+cofm_fsm:Periodo 99995  
+coin_fsm:time 125 
 cofm_fsm:Periodo 99998  
-coin_fsm:time 130 
+coin_fsm:time 129 
 cofm_fsm:Periodo 99993  
-coin_fsm:time 128 
-Reactor time 197810 
-Reactor time 99927727 
-Reactor time 99989706 
-Reactor time 99999081 
-Reactor time 100009757 
-Reactor time 100833292 
-Reactor time 99156224 
-Reactor time 100035486 
-Reactor time 99964810 
-Reactor time 99995070 
-Reactor time 100026998 
-Reactor time 99970019 
-Reactor time 99998508 
-Reactor time 100002363 
-Reactor time 100000748 
-Reactor time 100010539 
-Reactor time 99981946 
-Reactor time 100011477 
-Reactor time 99999081 
-Reactor time 99985018 
-Reactor time 100003717 
-Reactor time 99992884 
-Reactor time 99999811 
-Reactor time 100002884 
-Reactor time 100008144 
-Reactor time 100007467 
-Reactor time 99977311 
-Reactor time 99998926 
-Reactor time 99999030 
-Reactor time 99999395 
-Reactor time 100004395 
-Reactor time 99994604 
-Reactor time 99998770 
-Reactor time 100001530 
-Reactor time 100004655 
-Reactor time 100012051 
-Reactor time 99980698 
-Reactor time 99996947 
-Reactor time 99997728 
-Reactor time 99999759 
-Reactor time 100004864 
-Reactor time 99999761 
-Reactor time 99995333 
-Reactor time 100013041 
-Reactor time 99995698 
-Reactor time 100044031 
-Reactor time 99944136 
-Reactor time 100044917 
-Reactor time 99950750 
-Reactor time 99999708 
-Reactor time 100002678 
-Reactor time 99996011 
-Reactor time 100011167 
-Reactor time 99990230 
-Reactor time 100008199 
-Reactor time 100024136 
-Reactor time 99963720 
-Reactor time 99996792 
-Reactor time 99998928 
-Reactor time 99998824 
-Reactor time 100002678 
-Reactor time 99995542 
-Reactor time 99998772 
-Reactor time 99998147 
-Reactor time 99999553 
-Reactor time 100018667 
-Reactor time 99995386 
-Reactor time 99982991 
-Reactor time 99998356 
-Reactor time 100164291 
-Reactor time 99842940 
-Reactor time 99994241 
-Reactor time 99995961 
-Reactor time 100011220 
-Reactor time 99987262 
-Reactor time 100017158 
-Reactor time 99998616 
-Reactor time 99980335 
-Reactor time 99998200 
-Reactor time 100000127 
-Reactor time 100007784 
-Reactor time 99991117 
-Reactor time 99998929 
-Reactor time 99999346 
-Reactor time 100006482 
-Reactor time 100036377 
-Reactor time 99970649 
-Reactor time 99982263 
-Reactor time 99998669 
-Reactor time 99998461 
-Reactor time 100018253 
-Reactor time 99981379 
-Reactor time 99999139 
-Reactor time 99998618 
-Reactor time 100007941 
-Reactor time 100050805 
-Reactor time 99954503 
-Reactor time 99982524 
-Reactor time 100003566 
-Reactor time 99996326 
+coin_fsm:time 127 
+Reactor time 1483114 
+Reactor time 98637144 
+Reactor time 100001978 
+Reactor time 100002550 
+Reactor time 99997758 
+Reactor time 100410932 
+Reactor time 99577449 
+Reactor time 99996769 
+Reactor time 100006144 
+Reactor time 99990207 
+Reactor time 100032289 
+Reactor time 99965988 
+Reactor time 100006248 
+Reactor time 100003435 
+Reactor time 100000831 
+Reactor time 99989217 
+Reactor time 99996457 
+Reactor time 99996821 
+Reactor time 99998540 
+Reactor time 99999841 
+Reactor time 100004476 
+Reactor time 99995518 
+Reactor time 100006143 
+Reactor time 100003487 
+Reactor time 100000779 
+Reactor time 99988800 
+Reactor time 100008904 
+Reactor time 99985467 
+Reactor time 99997862 
+Reactor time 100013486 
+Reactor time 99998435 
+Reactor time 99989476 
+Reactor time 100005778 
+Reactor time 100002549 
+Reactor time 99999737 
+Reactor time 99990257 
+Reactor time 100009632 
+Reactor time 99982758 
+Reactor time 99999008 
+Reactor time 99998383 
+Reactor time 100006038 
+Reactor time 99998642 
+Reactor time 100004320 
+Reactor time 100001559 
+Reactor time 99999059 
+Reactor time 100083746 
+Reactor time 99903071 
+Reactor time 99996664 
+Reactor time 99999424 
+Reactor time 99998433 
+Reactor time 100005986 
+Reactor time 100004528 
+Reactor time 100010361 
+Reactor time 99997392 
+Reactor time 100006715 
+Reactor time 99976143 
+Reactor time 99995205 
+Reactor time 99996455 
+Reactor time 99999527 
+Reactor time 99998746 
+Reactor time 100004527 
+Reactor time 99995205 
+Reactor time 100009475 
+Reactor time 100000569 
+Reactor time 99998382 
+Reactor time 99991351 
+Reactor time 99994788 
+Reactor time 99998016 
+Reactor time 99998902 
+Reactor time 100267650 
+Reactor time 99738748 
+Reactor time 99993069 
+Reactor time 100009423 
+Reactor time 100000308 
+Reactor time 99998902 
+Reactor time 99989631 
+Reactor time 99999787 
+Reactor time 99994423 
+Reactor time 99998069 
+Reactor time 99999475 
+Reactor time 100021402 
+Reactor time 99982027 
+Reactor time 100006818 
+Reactor time 100000620 
+Reactor time 99984422 
+Reactor time 100084318 
+Reactor time 99901871 
+Reactor time 99996401 
+Reactor time 99998433 
+Reactor time 99999735 
+Reactor time 100017755 
+Reactor time 99984891 
+Reactor time 100006557 
+Reactor time 100000411 
+Reactor time 99984370 
+Reactor time 100119681 
+Reactor time 99879527 
+Reactor time 99997600 
+Reactor time 100003276 
+Reactor time 99996609 
