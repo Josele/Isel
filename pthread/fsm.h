@@ -1,6 +1,6 @@
 #ifndef FSM_H
 #define FSM_H
-
+ 
 #define MAXSTATES 10
 #define MAXINS 32
 

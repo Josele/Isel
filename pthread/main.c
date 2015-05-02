@@ -3,7 +3,7 @@
 #include <sys/time.h>
 #include <stdio.h>
 #include <wiringPi.h>
-#include "fsm.h"
+ #include "fsm.h"
 #include <time.h>
 #include <signal.h>
 #define GPIO_BUTTON 2
