@@ -20,8 +20,7 @@
 #define COFFEE_PRICE  50
 #define COFFEE_TIME 3000
 #define MILK_TIME 3000
-int desactivador2 = 0;
-int desactivador1 = 0;
+
  struct timeval diff, diff2, ant, ant2;
 
 enum cofm_state {
