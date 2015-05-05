@@ -197,12 +197,12 @@ static fsm_t* coin_fsm;
 
 
 coin_fsm=fsm_new (coinm);
-
+int n=0;
   
-while(1){ 
+for(n;n<200;n++){ 
 gettimeofday (&ant, NULL);
 timeval_sub (&ant, &ant, &diff);
-//printf("cofm_fsm:Periodo %d  \n",(int)ant.tv_usec); 
+printf("cofm_fsm:Periodo %d  \n",(int)ant.tv_usec); 
 ant=diff;
   
 
@@ -230,11 +230,11 @@ static fsm_t* cofm_fsm;
 
 
 cofm_fsm=fsm_new (cofm);
-
-while(1){
+int n=0;
+for(n;n<200;n++){
 gettimeofday (&ant2, NULL);
 timeval_sub (&ant2, &ant2, &diff2);
-//printf("cofm_fsm:Periodo %d  \n",(int)ant2.tv_usec); 
+printf("cofm_fsm:Periodo %d  \n",(int)ant2.tv_usec); 
 ant2=diff2;
 interfaz(cofm_fsm);  
  fsm_fire (cofm_fsm); 
