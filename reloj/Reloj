@@ -1,0 +1,5 @@
+He implementado el reloj con un ejecutivo ciclico y dos máquinas de estado, una de ellas pinta y la otra obtiene la hora y los minutos.
+Para l�a representación de l números, realizo una divisi�ón de la hora a representar en 16 segmentos + 4 más de espera para separar los números. Cada segmento es pintado y espera su debido tiempo para pasar al siguiente . Este tiempo es de 1/(9*2*20). Por tanto, dado que nuestro hyperperiodo es de 9hz, existirán dos periodos secundarios de 18hz para cada una de las máquinas de estado.
+
+PD. he tenido problemas con la representación de los númerospero los tiempos se cumplen. Probablemente el error que estoy teniendo venga de aceder incorrectamente a la matriz de números que me he generado.
+https://github.com/Josele/Isel/tree/master/reloj  
